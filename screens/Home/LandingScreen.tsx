@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { Platform, StyleSheet,View } from 'react-native';
 import * as React from 'react';
 
-export default function HomeScreen() {
+export default function LandingScreen() {
   return (
     <View style={styles.container}>
     </View>
@@ -14,7 +14,6 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor:"#DEB1B8"
   },
   title: {
     fontSize: 20,

@@ -15,14 +15,26 @@ declare global {
 
 export type RootStackParamList = {
   Home: undefined;
-  Todo: undefined;
-  Checklist: undefined;
+  CheckList: undefined;
+  Profile: undefined;
 };
 export type HomeParamList = {
   Landing: undefined;
   TodoList: undefined;
   TodoDetatil: undefined;
 };
+export type ProfileParamList = {
+  ProfileList: undefined;
+  EditProfile: undefined;
+  
+};
+export type CheckListParamList = {
+  TodoCheckList: undefined;
+  EditCheckList: undefined;
+  
+};
+
+
 
 export type RootStackScreenProps<Screen extends keyof RootStackParamList> = NativeStackScreenProps<
   RootStackParamList,

@@ -13,6 +13,9 @@ import { ColorSchemeName } from 'react-native';
 import { RootStackParamList } from '../types';
 import LinkingConfiguration from './LinkingConfiguration';
 import HomeNavigator from './HomeNavigator';
+import ProfileNavigator from './ProfileNavigator';
+import CheckListNavigator from './CheckListNavigator';
+
 
 export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeName }) {
   return (
@@ -32,8 +35,15 @@ export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeNa
 
 function RootNavigator() {
   return (
-    <Drawer.Navigator>
+    <Drawer.Navigator
+    initialRouteName='Home'
+    screenOptions={{
+      headerShown: false
+    }}
+    >
       <Drawer.Screen name="Home" component={HomeNavigator} />
+      <Drawer.Screen name="CheckList" component={CheckListNavigator} />
+      <Drawer.Screen name="Profile" component={ProfileNavigator} />
     </Drawer.Navigator>
   );
 }
