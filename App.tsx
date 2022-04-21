@@ -1,5 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import 'react-native-gesture-handler'
+import * as React from 'react';
+
 
 import useCachedResources from './hooks/useCachedResources';
 import useColorScheme from './hooks/useColorScheme';
@@ -12,9 +15,10 @@ export default function App() {
   if (!isLoadingComplete) {
     return null;
   } else {
+    
     return (
       <SafeAreaProvider>
-        <Navigation colorScheme={colorScheme} />
+        <Navigation colorScheme={"light"} />
         <StatusBar />
       </SafeAreaProvider>
     );
