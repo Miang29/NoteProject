@@ -52,7 +52,7 @@ export default function CheckListScreen() {
 
   return (
     <ViewWithLoading loading={false}>
-        <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
+        <ScrollView contentContainerStyle={{ flexGrow: 1 ,     backgroundColor:"#DEB1B8"}}>
     
             {textInputs.length > 0 && textInputs.map((data: input, index: number) => (
                 <View
@@ -81,15 +81,12 @@ export default function CheckListScreen() {
                         style={{ marginHorizontal: 10, alignSelf: 'center' }}
                         onPress={() => deleteInput(index)}
                     >
-                        <Ionicons name="close-circle-outline" size={24} color={"red"} />
+                        <Ionicons name="close-circle-outline" size={24} color={"black"} />
                     </TouchableOpacity>
                 </View>
             ))}
         </ScrollView>
-        <Button
-            title={"Submit"}
-            onPress={submitInputs}
-        />
+       
     </ViewWithLoading>
 );
 }
@@ -99,11 +96,13 @@ container: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor:"white"
 },
 inputContainer: {
     flex: 0,
     width: '100%',
     flexDirection: 'row',
-    justifyContent: 'flex-start'
+    justifyContent: 'flex-start',
+  
 }
 });

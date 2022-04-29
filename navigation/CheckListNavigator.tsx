@@ -5,7 +5,6 @@ import CheckListScreen from '../screens/CheckList/CheckListScreen';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { Ionicons } from '@expo/vector-icons';
 import { DEFAULT_ICON_COLOR } from '@expo/vector-icons/build/createIconSet';
-import { HomeScreen } from '../screens/Home';
 
 
 const Stack = createStackNavigator<CheckListParamList>();

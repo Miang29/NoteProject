@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { Platform, StyleSheet,View,TouchableOpacity,Text } from 'react-native';
+import { Platform, StyleSheet,View } from 'react-native';
 import * as React from 'react';
 
 export default function LandingScreen() {

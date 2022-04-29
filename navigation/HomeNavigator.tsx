@@ -15,7 +15,7 @@ export default function HomeNavigator() {
     <Stack.Navigator
     initialRouteName='TodoNotes'
     screenOptions={({navigation}) => ({
-      title: '',
+      title: 'Notes',
       headerLeft: () => (
         <TouchableOpacity
         style={{
@@ -37,9 +37,6 @@ export default function HomeNavigator() {
     
     >
       <Stack.Screen name="Landing" component={HomeScreen} />
-      
-      <Stack.Screen name="TodoNotes" component={TodoNotesScreen} />
-
     </Stack.Navigator>
   );
 }

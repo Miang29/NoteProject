@@ -1,21 +1,20 @@
 import { StyleSheet,View ,TouchableOpacity,Text} from 'react-native';
 import * as React from 'react';
 import TodoNotesScreen from './TodoNotesScreen';
-import { useNavigation } from '@react-navigation/native';
 
 
- export default function HomeScreen() {
-  const navigation = useNavigation(); 
+
+export default function HomeScreen() {
+  
+
 
   return (
     <View style={styles.container}>
-
-      <TouchableOpacity
-        style={styles.Plus}
-        onPress={() => navigation.navigate(TodoNotesScreen)}>
-        <Text style={styles.PlusSize}>+</Text>
-      </TouchableOpacity>
-
+   <TouchableOpacity
+      style={styles.Plus}
+  onPress= {(TodoNotesScreen)}>
+      <Text style={styles.PlusSize}>+</Text>
+    </TouchableOpacity>
     </View>
   );
 }
@@ -25,7 +24,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor:"white"
+    backgroundColor:"#DEB1B8"
   },
   title: {
     fontSize: 20,
@@ -54,7 +53,6 @@ PlusSize: {
   fontSize: 30,
   textAlign:'center'
 },
-}
-)
+});
 
- 
+
