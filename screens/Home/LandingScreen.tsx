@@ -1,10 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
-import { Platform, StyleSheet,View } from 'react-native';
+import { Platform, StyleSheet,View,TouchableOpacity,Text } from 'react-native';
 import * as React from 'react';
 
 export default function LandingScreen() {
   return (
     <View style={styles.container}>
+      
     </View>
   );
 }
@@ -24,4 +25,20 @@ const styles = StyleSheet.create({
     height: 1,
     width: '80%',
   },
+  Plus: {
+    height: 50,
+    width: '15%',
+    justifyContent: 'center',
+    alignItems:'center',
+    padding:1,
+    borderRadius:80,
+    backgroundColor:'#AF715D',
+    marginTop:520,
+    marginLeft:230,
+  },
+PlusSize: {
+  color: 'white',
+  fontSize: 30,
+  textAlign:'center'
+},
 });

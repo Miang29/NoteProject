@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { Platform, StyleSheet,View } from 'react-native';
 import * as React from 'react';
 
-export default function ProfileScreen() {
+export default function SettingScreen() {
   return (
     <View style={styles.container}>
     </View>

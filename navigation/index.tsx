@@ -13,7 +13,7 @@ import { ColorSchemeName } from 'react-native';
 import { RootStackParamList } from '../types';
 import LinkingConfiguration from './LinkingConfiguration';
 import HomeNavigator from './HomeNavigator';
-import ProfileNavigator from './ProfileNavigator';
+import SettingsNavigator from './SettingsNavigator';
 import CheckListNavigator from './CheckListNavigator';
 
 
@@ -43,7 +43,7 @@ function RootNavigator() {
     >
       <Drawer.Screen name="Home" component={HomeNavigator} />
       <Drawer.Screen name="CheckList" component={CheckListNavigator} />
-      <Drawer.Screen name="Profile" component={ProfileNavigator} />
+      <Drawer.Screen name="Settings" component={SettingsNavigator} />
     </Drawer.Navigator>
   );
 }

@@ -1,20 +1,20 @@
 import * as React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import { ProfileParamList } from '../types';
-import ProfileScreen from '../screens/Profile/ProfileScreen';
+import { SettingParamList } from '../types';
+import SettingScreen from '../screens/Setting/SettingScreen';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { Ionicons } from '@expo/vector-icons';
 import { DEFAULT_ICON_COLOR } from '@expo/vector-icons/build/createIconSet';
 
 
-const Stack = createStackNavigator<ProfileParamList>();
+const Stack = createStackNavigator<SettingParamList>();
 
-export default function ProfileNavigator() {
+export default function SettingsNavigator() {
   return (
     <Stack.Navigator
-    initialRouteName='ProfileList'
+    initialRouteName='AppSetting'
     screenOptions={({navigation}) => ({
-      title: 'Profile',
+      title: 'Settings',
       headerLeft: () => (
         <TouchableOpacity
         style={{
@@ -35,7 +35,7 @@ export default function ProfileNavigator() {
     })}
     
     >
-      <Stack.Screen name="ProfileList" component={ProfileScreen} />
+      <Stack.Screen name="AppSetting" component={SettingScreen} />
     </Stack.Navigator>
   );
 }

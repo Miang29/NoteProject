@@ -16,21 +16,23 @@ declare global {
 export type RootStackParamList = {
   Home: undefined;
   CheckList: undefined;
-  Profile: undefined;
+  Settings: undefined;
 };
 export type HomeParamList = {
   Landing: undefined;
-  TodoList: undefined;
-  TodoDetatil: undefined;
+  TodoNotes: undefined;
+  SavedChecklist: undefined;
 };
-export type ProfileParamList = {
-  ProfileList: undefined;
-  EditProfile: undefined;
+export type SettingParamList = {
+  AppSetting: undefined;
+  
   
 };
 export type CheckListParamList = {
   TodoCheckList: undefined;
   EditCheckList: undefined;
+  
+
   
 };
 
