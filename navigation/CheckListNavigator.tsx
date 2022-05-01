@@ -5,6 +5,7 @@ import CheckListScreen from '../screens/CheckList/CheckListScreen';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { Ionicons } from '@expo/vector-icons';
 import { DEFAULT_ICON_COLOR } from '@expo/vector-icons/build/createIconSet';
+import { HomeScreen } from '../screens/Home';
 
 
 const Stack = createStackNavigator<CheckListParamList>();
@@ -20,13 +21,10 @@ export default function CheckListNavigator() {
         style={{
           marginLeft:15
         }}
-        onPress={() =>{
-          navigation.toggleDrawer();
-        }
-        }
-        >
+        onPress={() =>
+          navigation.navigate('HomeNavigator')}>
          <Ionicons
-         name={"menu"}
+         name={"arrow-back-outline"}
          size={32}
          color= {DEFAULT_ICON_COLOR}
          />

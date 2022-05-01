@@ -2,11 +2,11 @@ import * as React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { HomeParamList } from '../types';
 import HomeScreen from '../screens/Home/HomeScreen';
-import TodoNotesScreen from '../screens/Home/TodoNotesScreen';
+import TodoNotesScreen from './TodoNotesScreen';
+
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { Ionicons } from '@expo/vector-icons';
 import { DEFAULT_ICON_COLOR } from '@expo/vector-icons/build/createIconSet';
-
 
 const Stack = createStackNavigator<HomeParamList>();
 
@@ -15,7 +15,7 @@ export default function HomeNavigator() {
     <Stack.Navigator
     initialRouteName='TodoNotes'
     screenOptions={({navigation}) => ({
-      title: 'Notes',
+      title: '',
       headerLeft: () => (
         <TouchableOpacity
         style={{
@@ -37,6 +37,8 @@ export default function HomeNavigator() {
     
     >
       <Stack.Screen name="Landing" component={HomeScreen} />
+
+
     </Stack.Navigator>
   );
 }
