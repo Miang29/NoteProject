@@ -30,8 +30,8 @@ const Home = ({ navigation }: { navigation: any }) => {
 					onPress={() => {
 						const newNote: note = {
 							id: uuidv4(),
-							title: 'New Title',
-							text: 'Insert new text',
+							title: 'Title',
+							text: 'Description',
 						};
 
 						if (notes != null) {
@@ -47,8 +47,8 @@ const Home = ({ navigation }: { navigation: any }) => {
 						});
 					}}
 					name="edit"
-					size={30}
-					color="#FFF"
+					size={25}
+					color='black'
 				/>
 			),
 		});

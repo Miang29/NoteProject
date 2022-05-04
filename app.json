@@ -4,10 +4,10 @@
     "slug": "notes-react-native",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/Logo.png",
+    "icon": "./assets/Kitty.png",
     "splash": {
-      "image": "./assets/Logo.png",
-      "resizeMode": "contain",
+      "image": "./assets/KIttyNotes.png",
+      "resizeMode": "cover",
       "backgroundColor": "#f5f5f5"
     },
     "updates": {

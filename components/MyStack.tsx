@@ -26,16 +26,17 @@ const MyStack = () => {
 
     const screenOptions : optionsTypes = { 
         defaultScreen:{
-            headerTintColor:'#FFF',
+            headerTintColor:'black',
             headerStyle: {
-                backgroundColor: '#4169e1'
+                backgroundColor: '#F5AA94'
             },
             cardStyle: {
-                backgroundColor: '#ffffff'
+                backgroundColor: '#F9E3DC'
             }
         },
         homeScreen:{
             headerTitleAlign:'center'
+            
             
         },
         noteScreen:{
@@ -43,6 +44,7 @@ const MyStack = () => {
             
         }
     }
+
 
 
     return (

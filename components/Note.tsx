@@ -77,20 +77,34 @@ const Note  = ({route , navigation } : {route : any,navigation : any}) => {
 const styles = StyleSheet.create({
     titleContainer:{
         display: 'flex',
-        margin: 25,
-        paddingBottom: 10,
+        paddingBottom: 1,
         borderBottomWidth: 2,
         borderBottomColor: 'rgba(255, 255, 255, 0.05)',
     },
     editableTitle:{
-        fontSize: 30,
-        color:'black',
+        height: 50,
+      borderWidth:1,
+      padding:10,
+      fontSize:20,
+      fontWeight:'bold',
+       textAlignVertical:'top',
+       justifyContent:'flex-end',
+       borderTopColor:'transparent',
+		borderLeftColor:'transparent',
+		borderRightColor:'transparent',
     },
     textField:{
-        fontSize: 25,
-        color: 'black',
-        margin: 15,
+        borderTopColor:'transparent',
+		borderLeftColor:'transparent',
+		borderRightColor:'transparent',
+        borderBottomColor:'transparent',
+        height: 625,
+        borderWidth:1,
+        textAlignVertical:'top',
+        fontSize:15,
+        padding:10,
+        color:'black',
+        justifyContent:'center'
     }
 }) 
-
 export default Note
