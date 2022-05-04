@@ -9,7 +9,7 @@ import { getNotes, storeNotes } from '../utils/Local/Storage';
 //Styles
 const styles = StyleSheet.create({
 	editIcon: {
-		marginRight: 30,
+		marginRight: 25,
 	},
 });
 

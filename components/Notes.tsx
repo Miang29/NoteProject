@@ -29,8 +29,8 @@ const Notes = ({ navigation }: { navigation: any }) => {
 	const { notes, setNotes } = useContext(notesContext);
 	const alertDelete = (id: string) => {
 		Alert.alert(
-			'Note',
-			"Are you sure you want to delete?",
+			'Delete Note',
+			"Are you sure you want to delete this note?",
 			[
 				{
 					text: 'Cancel',
