@@ -9,7 +9,7 @@ import Note from './Note'
 //Styles 
 const styles = StyleSheet.create({
     editIcon:{
-        marginRight:30, 
+        marginRight:20, 
     }
 })
 
